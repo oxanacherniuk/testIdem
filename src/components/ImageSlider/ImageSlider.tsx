@@ -45,7 +45,6 @@ const ImageSlider = ({ images, productTitle }: ImageSliderProps) => {
                 height={400}
                 className={styles['product-image']}
             />
-            
         </div>
     </div>
     );

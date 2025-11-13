@@ -10,7 +10,7 @@ export const useProducts = () => {
         const fetchProducts = async () => {
             try {
                 setLoading(true);
-                const response = await fetch('https://dummyjson.com/products');
+                const response = await fetch('https://dummyjson.com/products?limit=100');
                 const data: ProductsResponse = await response.json();
                 setProducts(data.products);
             } catch (err) {

@@ -84,3 +84,9 @@
     font-size: 16px;
     font-weight: 500;
 }
+
+.button-cart:hover {
+    background: var(--orange);
+    border: 1px solid var(--orange);
+    color: white;
+}

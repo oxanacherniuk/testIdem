@@ -1,4 +1,3 @@
-// src/app/products/[id]/page.tsx
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import styles from './page.module.css';
@@ -88,16 +87,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
         }
     };
 
-    const getPackaging = () => {
-        if (product.weight) {
-            return `${product.weight * 1000} г`;
-        } else if (product.dimensions) {
-            return `${Math.round(product.dimensions.width)}x${Math.round(product.dimensions.height)}x${Math.round(product.dimensions.depth)} см`;
-        } else {
-            return 'Стандартная упаковка';
-        }
-    };
-
     const breadcrumbsItems = [
         { label: 'Главная', href: '/' },
         { label: 'Каталог', href: '/' },
@@ -174,14 +163,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
                                 {getWeight()}
                             </span>
                         </div>
-                        <div className={styles['spec-item']}>
-                            <span className={styles['spec-label']}>Упаковка</span>
-                            <span className={styles['spec-value']}>
-                                {getPackaging()}
-                            </span>
-                        </div>
                         {product.dimensions && (
-                            <div style={{ backgroundColor: `var(--light-grey)` }} className={styles['spec-item']}>
+                            <div className={styles['spec-item']}>
                                 <span className={styles['spec-label']}>Размеры</span>
                                 <span className={styles['spec-value']}>
                                     {Math.round(product.dimensions.width)}x{Math.round(product.dimensions.height)}x{Math.round(product.dimensions.depth)} см
@@ -189,7 +172,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                             </div>
                         )}
                         {product.warrantyInformation && (
-                            <div className={styles['spec-item']}>
+                            <div style={{ backgroundColor: `var(--light-grey)` }} className={styles['spec-item']}>
                                 <span className={styles['spec-label']}>Гарантия</span>
                                 <span className={styles['spec-value']}>
                                     {product.warrantyInformation}
