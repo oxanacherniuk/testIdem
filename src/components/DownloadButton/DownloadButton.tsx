@@ -15,7 +15,7 @@ const DownloadButton = ({ onClick, isExpanded, disabled = false }: DownloadButto
             onClick={onClick}
             disabled={disabled}
         >
-            {isExpanded ? 'Скрыть' : 'Загрузить еще'}
+            {isExpanded ? 'Свернуть' : 'Загрузить еще'}
         </Button>
     );
 };

@@ -1,0 +1,48 @@
+.footer {
+    margin-top: 80px;
+    background: var(--bg-footer);
+    padding: 24px 0;
+}
+
+.footer-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-box__left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.footer-link {
+    color: var(--black);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.footer-box__right {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-num {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+    display: flex;
+    gap: 8px;
+}

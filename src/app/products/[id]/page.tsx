@@ -8,6 +8,7 @@ import Header from '@/layouts/Header/Header';
 import ShareButton from '@/components/ShareButton/ShareButton';
 import ImageSlider from '@/components/ImageSlider/ImageSlider';
 import SimilarProducts from '@/layouts/SimilarProducts/SimilarProducts';
+import Footer from '@/layouts/Footer/Footer';
 
 interface ProductPageProps {
     params: Promise<{
@@ -190,6 +191,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 />
             </div>
         </div>
+        <Footer />
     </main>
     );
 }
