@@ -1,0 +1,145 @@
+.card-top {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.card-top__button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-sku, .reviews-count, .card-top__button {
+    color: var(--black);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.card-main {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.product-gallery {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+}
+
+.image-thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.thumbnail, .product-image {
+    cursor: pointer;
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, .1));
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.main-image {
+    min-width: 600px;
+}
+
+.product-info {
+    width: 424px;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.price-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.price-regular {
+    font-weight: 400;
+    color: var(--black);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.price-bold {
+    font-weight: 700;
+    color: var(--black);
+    font-size: 36px;
+}
+
+.price-text {
+    color: var(--grey);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.shopping-button {
+    position: relative;
+}
+
+.shopping-cart {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.add-to-cart {
+    background: var(--orange);
+    color: white;
+    border-radius: 4px;
+    width: 100%;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.bonuses, .notifications {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bonuses p, .notifications p {
+    color: var(--green);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.notifications p {
+    color: var(--black) !important;
+}
+
+.specifications {
+    margin-top: 24px;
+}
+
+.spec-item {
+    padding: 4px 51px 4px 8px;
+    display: flex;
+    gap: 40px;
+}
+
+.spec-label, .spec-value {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--black);
+    width: 200px;
+}
+
+.spec-value {
+    font-weight: 700;
+}
